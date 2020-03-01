@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "blogapp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authawsapp2fe479f0",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
