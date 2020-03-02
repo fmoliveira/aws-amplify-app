@@ -61,3 +61,33 @@ export const onDeleteNote = /* GraphQL */ `
     }
   }
 `;
+export const onCreateLink = /* GraphQL */ `
+  subscription OnCreateLink($owner: String!) {
+    onCreateLink(owner: $owner) {
+      id
+      description
+      url
+      owner
+    }
+  }
+`;
+export const onUpdateLink = /* GraphQL */ `
+  subscription OnUpdateLink($owner: String!) {
+    onUpdateLink(owner: $owner) {
+      id
+      description
+      url
+      owner
+    }
+  }
+`;
+export const onDeleteLink = /* GraphQL */ `
+  subscription OnDeleteLink($owner: String!) {
+    onDeleteLink(owner: $owner) {
+      id
+      description
+      url
+      owner
+    }
+  }
+`;

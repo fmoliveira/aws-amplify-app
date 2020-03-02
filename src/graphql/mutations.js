@@ -79,3 +79,42 @@ export const deleteNote = /* GraphQL */ `
     }
   }
 `;
+export const createLink = /* GraphQL */ `
+  mutation CreateLink(
+    $input: CreateLinkInput!
+    $condition: ModelLinkConditionInput
+  ) {
+    createLink(input: $input, condition: $condition) {
+      id
+      description
+      url
+      owner
+    }
+  }
+`;
+export const updateLink = /* GraphQL */ `
+  mutation UpdateLink(
+    $input: UpdateLinkInput!
+    $condition: ModelLinkConditionInput
+  ) {
+    updateLink(input: $input, condition: $condition) {
+      id
+      description
+      url
+      owner
+    }
+  }
+`;
+export const deleteLink = /* GraphQL */ `
+  mutation DeleteLink(
+    $input: DeleteLinkInput!
+    $condition: ModelLinkConditionInput
+  ) {
+    deleteLink(input: $input, condition: $condition) {
+      id
+      description
+      url
+      owner
+    }
+  }
+`;
